@@ -4,7 +4,7 @@ function updateTime() {
   if (johannesburgElement) {
     let johannesburgDateElement = johannesburgElement.querySelector(".date");
     let johannesburgTimeElement = johannesburgElement.querySelector(".time");
-    let johannesburgTime = moment().tz("South Africa/Johannesburg");
+    let johannesburgTime = moment().tz("Africa/Johannesburg");
 
     johannesburgDateElement.innerHTML = johannesburgTime.format("MMMM	Do YYYY");
     johannesburgTimeElement.innerHTML = johannesburgTime.format(
