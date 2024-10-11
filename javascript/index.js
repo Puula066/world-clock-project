@@ -6,8 +6,8 @@ function updateTime() {
     let johannesburgTimeElement = johannesburgElement.querySelector(".time");
     let johannesburgTime = moment().tz("South Africa/Johannesburg");
 
-    losAngelesDateElement.innerHTML = losAngelesTime.format("MMMM	Do YYYY");
-    losAngelesTimeElement.innerHTML = losAngelesTime.format(
+    johannesburgDateElement.innerHTML = johannesburgTime.format("MMMM	Do YYYY");
+    johannesburgTimeElement.innerHTML = johannesburgTime.format(
       "h:mm:ss [<small>]A[</small>]"
     );
   }
